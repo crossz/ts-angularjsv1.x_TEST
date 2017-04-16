@@ -1,0 +1,10 @@
+// cnpm install --save @types/angular
+// cnpm install --save @types/angular-route
+
+{
+  "dependencies": {
+    "@types/angular": "^1.6.14",
+    "@types/angular-route": "^1.3.3"
+  }
+}
+
