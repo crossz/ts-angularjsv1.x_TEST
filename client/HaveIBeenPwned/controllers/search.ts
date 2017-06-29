@@ -5,15 +5,8 @@ module HaveIBeenPwned {
         constructor(private pwnedService: IPwnedService) {
         }
 
-
-
         private breachedAccounts: BreachedAccount[];
-
-        // submit(address: string) {
-        //     this.pwnedService.check(address).then((result : ng.IHttpPromiseCallbackArg<{}>) =>{
-        //         this.breachedAccounts = result.data;
-        //     });
-        // }
+        
 
         submit(address: string) {
             this.pwnedService.check(address).then((result : ng.IHttpPromiseCallbackArg<BreachedAccount[]>) =>{

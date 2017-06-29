@@ -5,5 +5,12 @@
     },
     "files": [
         "app.ts"
-    ]
+    ],
+    "include": [
+        "**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+]
 }

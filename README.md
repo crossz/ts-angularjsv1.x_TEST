@@ -8,6 +8,7 @@ http://www.developerhandbook.com/typescript/writing-angularjs-1-x-with-typescrip
 ### d.ts
 
 > cnpm install --save @types/angular
+> 
 > cnpm install --save @types/angular-route
 
 ### javascript libs from bower.
