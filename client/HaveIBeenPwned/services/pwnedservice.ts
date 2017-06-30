@@ -9,8 +9,8 @@ module HaveIBeenPwned{
 	    constructor(private $http : ng.IHttpService) {			
 	    }
 		
-        // check(address:string) : ng.IPromise<{}> {
-        check(address:string) : ng.IPromise<ng.IHttpPromiseCallbackArg<BreachedAccount[]>> {
+        check(address:string) : ng.IPromise<{}> {
+        // check(address:string) : ng.IPromise<ng.IHttpPromiseCallbackArg<BreachedAccount[]>> {
             // TODO: need to adjst the API address
             return this.$http.get("https://haveibeenpwned.com/api/v2/breachedaccount/" + address);    
         }	
