@@ -1,7 +1,9 @@
+///<reference path="../../node_modules/@types/angular-route/index.d.ts"/>
+
 module HaveIBeenPwned {
     "use strict";
 
-    function routes($routeProvider: ng.route.IRouteProvider){ 
+    function routeConfig($routeProvider: ng.route.IRouteProvider){ 
         $routeProvider
             .when("/search", {
                 templateUrl: "/client/HaveIBeenPwned/views/_search.html",
@@ -10,12 +12,13 @@ module HaveIBeenPwned {
             })
             .otherwise({
                 redirectTo: "/search"
-            });       
+            });
     }
 
-    routes.$inject = ["$routeProvider"]
+    routeConfig.$inject = ["$routeProvider"]
 
     angular
         .module("HaveIBeenPwned")
-        .config(routes);
+        .config(routeConfig);
 }
+

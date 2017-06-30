@@ -17,18 +17,19 @@ Or: manually install dependencies:
 
 >  cnpm install --save @types/angular-route
 
-p.s.: To add an entry to your package.json's dependencies, `npm install <package_name> --save`
+> cnpm install --save angular
 
-### javascript libs from bower.
+> cnpm install --save angular-route
 
-By using bower.json
-> bower install
+p.s.: 
 
-The following libs are installed.
-- angular
-- angular-route
+1. To add an entry to your package.json's dependencies, `npm install <package_name> --save`
+1. @types from npm is the latest solution for declare typings. tsd and typing are old styles.
 
+## Compile it
 
+As I have add 'include' section in tsconfig.json, just run `tsc` at the root directory of the project will be fine. 
+Otherwise, `tsc -p .` will compile the 'project' dir.
 
 ## Run it
 
